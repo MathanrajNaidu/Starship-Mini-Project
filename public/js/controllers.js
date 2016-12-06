@@ -15,8 +15,6 @@ function AppCtrl($scope, $http) {
           $scope.starships.push(starship);
         };
     });
-
-    // $scope.starships = orderBy($scope.starships, crew, true);
   }).
   error(function(data, status, headers, config) {
     $scope.name = 'Error!'
